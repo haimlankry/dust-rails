@@ -3673,3 +3673,5 @@ var parser = (function(){
 dust.parse = parser.parse;
 
 })(typeof exports !== 'undefined' ? exports : dust);
+// haim additions
+dust.optimizers.format = function(ctx, node) { return node };
